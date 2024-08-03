@@ -9,10 +9,9 @@ public abstract class Conta implements IConta{
     private Cliente cliente;
 
     // Create Constructor for this class
-    public Conta(int agencia, int numero, double saldo, Cliente cliente) {
+    public Conta (Cliente cliente) {
         this.agencia = Conta.AGENCIA_PADRAO;
         this.numero = SEQUENCIAL++;
-        this.saldo = saldo;
         this.cliente = cliente;
     }
 

@@ -6,13 +6,6 @@ public class Cliente {
     private String email;
     private int telefone;
 
-    public Cliente(double saldo, String nomeTitular, String cpf, String endereco, String email, int telefone) {
-        this.nomeTitular = nomeTitular;
-        this.cpf = cpf;
-        this.endereco = endereco;
-        this.email = email;
-        this.telefone = telefone;
-    }
 
     public String getNomeTitular() {
         return nomeTitular;
@@ -34,6 +27,10 @@ public class Cliente {
         return telefone;
     }
 
+
+    public void setNomeTitular(String nomeTitular) {
+        this.nomeTitular = nomeTitular;
+    }
 
     public void updateEndereco(String endereco) {
         this.endereco = endereco;

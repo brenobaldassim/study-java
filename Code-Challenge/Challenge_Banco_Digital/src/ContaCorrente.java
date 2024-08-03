@@ -1,14 +1,13 @@
-public class ContaCorrente extends Conta{
+public class ContaCorrente extends Conta {
 
-  public ContaCorrente(int agencia, int numero, double saldo, Cliente cliente) {
-    super(agencia, numero, saldo, cliente);
-    //TODO Auto-generated constructor stub
-  }
+	public ContaCorrente(Cliente cliente) {
+		super(cliente);
+	}
 
-  @Override
-  public void imprimirExtrato() {
-    // TODO Auto-generated method stub
-    throw new UnsupportedOperationException("Unimplemented method 'imprimirExtrato'");
-  }
-  
+	@Override
+	public void imprimirExtrato() {
+		System.out.println("==== Saldo Conta Corrente ====");
+		super.imprimirInfosComuns();
+	}
+
 }
